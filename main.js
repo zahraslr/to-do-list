@@ -21,7 +21,7 @@ function addToDo(event) {
     addLocalToDo (firstShow.value);
     firstShow.value = "";
     
-    const imageDiv = document.createElement("image-div");
+    const imageDiv = document.createElement("div");
     imageDiv.classList.add("image-div");
     toDoDiv.appendChild(imageDiv);
 
