@@ -101,7 +101,7 @@ main {
   margin-bottom: 150px;
 }
 
-.show-list div {
+.show-list .entered-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
