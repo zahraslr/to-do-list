@@ -3,14 +3,14 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 body{
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     color: rgb(150, 148, 148);
     background: #fff;
-    
-
 }
+
 main{
     display: flex;
     flex-direction: column;
@@ -20,6 +20,7 @@ main{
     align-items: center;
     background-color: rgb(255, 221, 25);
 }
+
 .title{
     font-size: 30px;
     font-weight: bold;
@@ -29,21 +30,25 @@ main{
     display: flex;
     justify-content: center;
 }
+
 .first-show{
     display: flex;
     .list{
         border: 2px solid rgb(158, 136, 158);
         display: flex;
         align-items: center;
+        justify-content: center;
         padding: 0 10px;
         margin-bottom: 30px;
         #list{
             background-color: rgb(255, 221, 25);
             border: none;
-            margin-top: 10px;
-            margin-left: 10px;
+            margin-left: -8px;
+            padding-left: 10px;
             color: rgb(44, 44, 44);
             font-weight: 700px;
+            width: 150px;
+            height: 37px;
         }
     }
     .filter{
@@ -56,22 +61,40 @@ main{
         #filter{
             background-color: rgb(255, 221, 25);
             border: none;
-            margin-top: 10px;
+            margin-top: 2px;
+            margin-right: 2px;
             margin-left: 10px;
             color: rgb(44, 44, 44);
             font-weight: 700px;
+            height: 37px;
+
         }
     }
 }
+
 .show-list{
-    .entered-list{
+    div{
         display: flex;
         border: 2px solid rgb(158, 136, 158);
         margin-bottom: 1px;
-        padding:10px;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        p{
+            padding:10px 30px 10px 10px;
+        }
     }
-    margin-bottom: 50px;
+    .used{
+        background-color: rgb(134, 134, 134);
+        color: rgb(119, 101, 0);
+    }
+    .trash{
+        display: none;
+    }
+    margin-bottom: 150px;
 }
+
 img{
     cursor: pointer;
 }

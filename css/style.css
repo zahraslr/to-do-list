@@ -59,6 +59,9 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 0 10px;
   margin-bottom: 30px;
 }
@@ -66,10 +69,12 @@ main {
 .first-show .list #list {
   background-color: #ffdd19;
   border: none;
-  margin-top: 10px;
-  margin-left: 10px;
+  margin-left: -8px;
+  padding-left: 10px;
   color: #2c2c2c;
   font-weight: 700px;
+  width: 150px;
+  height: 37px;
 }
 
 .first-show .filter {
@@ -84,23 +89,44 @@ main {
 .first-show .filter #filter {
   background-color: #ffdd19;
   border: none;
-  margin-top: 10px;
+  margin-top: 2px;
+  margin-right: 2px;
   margin-left: 10px;
   color: #2c2c2c;
   font-weight: 700px;
+  height: 37px;
 }
 
 .show-list {
-  margin-bottom: 50px;
+  margin-bottom: 150px;
 }
 
-.show-list .entered-list {
+.show-list div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   border: 2px solid #9e889e;
   margin-bottom: 1px;
-  padding: 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.show-list div p {
+  padding: 10px 30px 10px 10px;
+}
+
+.show-list .used {
+  background-color: #868686;
+  color: #776500;
+}
+
+.show-list .trash {
+  display: none;
 }
 
 img {
