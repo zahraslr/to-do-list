@@ -108,7 +108,7 @@ function getToDo(){
     todos.forEach(function(toDo) {
         
     const toDoDiv = document.createElement("div");
-    toDoDiv.classList.add("toDo");
+    toDoDiv.classList.add("entered-list");
 
     const newToDo = document.createElement("p");
     newToDo.innerHTML = toDo;
